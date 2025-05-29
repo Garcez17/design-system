@@ -1,0 +1,4 @@
+{
+  "extends": "@taiwan-ig-ui/ts-config/react.json",
+  "include": ["src"]
+}
