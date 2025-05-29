@@ -29,9 +29,6 @@ jobs:
 
       - name: Deploy storybook
         working-directory: ./packages/docs
+        run: pnpm run deploy-storybook -- --ci --existing-output-dir=storybook-static
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: |
-          git config --global user.email "ci@github.com"
-          git config --global user.name "GitHub CI"
-          pnpm exec storybook-to-ghpages --existing-output-dir=storybook-static --git-remote-url=https://x-access-token:${GH_TOKEN}@github.com/Garcez17/design-system.git
