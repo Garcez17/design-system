@@ -1,6 +1,6 @@
 {
   "name": "@taiwan-ig-ui/react",
-  "version": "1.0.0",
+  "version": "3.0.0",
   "description": "",
   "license": "MIT",
   "main": "./dist/index.js",
@@ -12,7 +12,6 @@
     "lint": "eslint src/**/*.ts* --fix"
   },
   "devDependencies": {
-    "@taiwan-ig-ui/eslint-config": "workspace:*",
     "@taiwan-ig-ui/tokens": "workspace:*",
     "@taiwan-ig-ui/ts-config": "workspace:*",
     "@types/react": "^19.1.6",

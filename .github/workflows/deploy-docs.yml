@@ -26,6 +26,9 @@ jobs:
 
       - name: Build Storybook
         run: pnpm run build
+        env:
+          TURBO_TOKEN: 4A4T628tWSjYC4ZcqYwF6duN
+          TURBO_TEAM: garceez17
 
       - name: Deploy Storybook to GitHub Pages
         uses: peaceiris/actions-gh-pages@v4

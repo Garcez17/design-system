@@ -4,12 +4,16 @@
     "packages/*"
   ],
   "devDependencies": {
+    "@changesets/cli": "^2.29.4",
     "eslint": "^8.56.0",
     "turbo": "^2.5.3"
   },
   "scripts": {
     "dev": "turbo run dev --parallel",
-    "build": "turbo run build"
+    "build": "turbo run build",
+    "changeset": "changeset",
+    "changeset:version": "changeset version",
+    "changeset:publish": "pnpm run build --filter=@taiwan-ig-ui/docs && changeset publish"
   },
   "packageManager": "pnpm@9.15.0"
 }
