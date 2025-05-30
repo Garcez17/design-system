@@ -24,11 +24,11 @@ jobs:
       - name: Install dependencies
         run: pnpm install --frozen-lockfile
 
-      - name: Build
-        run: pnpm run build
+      - name: Build Storybook
+        run: pnpm --filter docs build-storybook
 
-      - name: Deploy storybook
-        working-directory: ./packages/docs
-        run: pnpm run deploy-storybook -- --ci --existing-output-dir=storybook-static
-        env:
-          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - name: Deploy Storybook to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          publish_dir: ./packages/docs/storybook-static
+          github_token: ${{ secrets.GITHUB_TOKEN }}
