@@ -25,12 +25,17 @@ const config: StorybookConfig = {
   docs: {
     autodocs: true,
   },
-  viteFinal: async (config) => {
+  viteFinal: async (config, { configType }) => {
     config.resolve = config.resolve || {};
     config.resolve.alias = {
       ...config.resolve.alias,
       '@': resolve(dirname_, '../src'),
     };
+
+    if (configType === 'PRODUCTION') {
+      config.base = '/design-system'
+    }
+
     return config;
   },
 };
