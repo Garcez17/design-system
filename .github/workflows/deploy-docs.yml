@@ -22,10 +22,10 @@ jobs:
           cache: 'pnpm'
 
       - name: Install dependencies
-        run: pnpm install --frozen-lockfile
+        run: pnpm ci
 
       - name: Build Storybook
-        run: pnpm --filter docs build-storybook
+        run: pnpm run build
 
       - name: Deploy Storybook to GitHub Pages
         uses: peaceiris/actions-gh-pages@v4
