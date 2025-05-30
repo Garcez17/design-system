@@ -1,5 +1,11 @@
 # @taiwan-ig-ui/react
 
+## 3.0.1
+
+### Patch Changes
+
+- components fixes
+
 ## 3.0.0
 
 ### Major Changes

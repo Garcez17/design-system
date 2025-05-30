@@ -13,7 +13,7 @@
     "build": "turbo run build",
     "changeset": "changeset",
     "changeset:version": "changeset version",
-    "changeset:publish": "pnpm run build --filter=@taiwan-ig-ui/docs && changeset publish"
+    "changeset:publish": "pnpm run build --filter=!docs && changeset publish"
   },
   "packageManager": "pnpm@9.15.0"
 }
