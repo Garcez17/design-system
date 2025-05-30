@@ -15,4 +15,13 @@ export const colors = {
   ignite500: '#00875F',
   ignite700: '#015F43',
   ignite900: '#00291D',
+
+  zinc100: '#F4F4F5',
+  zinc200: '#E4E4E7',
+  zinc300: '#D4D4D8',
+  zinc400: '#A1A1AA',
+  zinc500: '#71717A',
+  zinc600: '#52525B',
+  zinc700: '#3F3F46',
+  zinc800: '#27272A',
 }
