@@ -158,9 +158,6 @@ importers:
         specifier: ^1.4.1
         version: 1.4.1(react@19.1.0)
     devDependencies:
-      '@taiwan-ig-ui/eslint-config':
-        specifier: workspace:*
-        version: link:../eslint-config
       '@taiwan-ig-ui/tokens':
         specifier: workspace:*
         version: link:../tokens
@@ -185,9 +182,6 @@ importers:
 
   packages/tokens:
     devDependencies:
-      '@taiwan-ig-ui/eslint-config':
-        specifier: workspace:*
-        version: link:../eslint-config
       '@taiwan-ig-ui/ts-config':
         specifier: workspace:*
         version: link:../ts-config
